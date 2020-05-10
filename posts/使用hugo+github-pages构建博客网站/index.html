@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>使用Hugo&#43;GitHub Pages构建博客网站 - 志洋的博客</title>
+        <meta name="Description" content=""><meta property="og:title" content="使用Hugo&#43;GitHub Pages构建博客网站" />
+<meta property="og:description" content="Hugo是一个基于Go语言的静态网站构建工具，它提供了大量可供选择的模板主题（Theme），帮助我们更加快捷地搭建自己的网站，并且可以非常方便地部署在GitHub Pages上。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/%E4%BD%BF%E7%94%A8hugo&#43;github-pages%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" />
+<meta property="article:published_time" content="2020-05-09T20:22:16+08:00" />
+<meta property="article:modified_time" content="2020-05-09T20:22:16+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用Hugo&#43;GitHub Pages构建博客网站"/>
+<meta name="twitter:description" content="Hugo是一个基于Go语言的静态网站构建工具，它提供了大量可供选择的模板主题（Theme），帮助我们更加快捷地搭建自己的网站，并且可以非常方便地部署在GitHub Pages上。"/>
+<meta name="application-name" content="志洋的博客">
+<meta name="apple-mobile-web-app-title" content="志洋的博客"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/%E4%BD%BF%E7%94%A8hugo&#43;github-pages%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "使用Hugo+GitHub Pages构建博客网站",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/%E4%BD%BF%E7%94%A8hugo\x2bgithub-pages%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99\/"
+        },"genre": "posts","keywords": "Hugo, Github Pages","wordcount":  2681 ,
+        "url": "http:\/\/example.org\/posts\/%E4%BD%BF%E7%94%A8hugo\x2bgithub-pages%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99\/","datePublished": "2020-05-09T20:22:16+08:00","dateModified": "2020-05-09T20:22:16+08:00","author": {
+                "@type": "Person",
+                "name": "李志洋"
+            },"description": ""
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="志洋的博客">志洋的博客</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="https://github.com/lzyang1995" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="志洋的博客">志洋的博客</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="https://github.com/lzyang1995" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">使用Hugo&#43;GitHub Pages构建博客网站</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>李志洋</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                                <i class="far fa-folder fa-fw"></i>博客搭建
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-05-09>2020-05-09</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 2681 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 6 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-src="/images/Hugo-Blog/hugo-logo-wide.png"
+        data-srcset="/images/Hugo-Blog/hugo-logo-wide.png, /images/Hugo-Blog/hugo-logo-wide.png 1.5x, /images/Hugo-Blog/hugo-logo-wide.png 2x"
+        data-sizes="auto"
+        alt="/images/Hugo-Blog/hugo-logo-wide.png"
+        title="/images/Hugo-Blog/hugo-logo-wide.png" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo安装">Hugo安装</a></li>
+    <li><a href="#网站构建">网站构建</a></li>
+    <li><a href="#网站配置">网站配置</a></li>
+    <li><a href="#撰写博客">撰写博客</a></li>
+    <li><a href="#将网站部署到github-pages上">将网站部署到GitHub Pages上</a></li>
+    <li><a href="#参考资料">参考资料</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><a href="https://gohugo.io/" target="_blank" rel="noopener noreffer">Hugo</a>是一个基于Go语言的静态网站构建工具，它提供了大量可供选择的模板主题（Theme），帮助我们更加快捷地搭建自己的网站，并且可以非常方便地部署在GitHub Pages上。</p>
+<p>下面分享一下我利用Hugo和Github Pages搭建博客网站（也就是这个网站）的一些经验。</p>
+<h2 id="hugo安装">Hugo安装</h2>
+<p>Hugo支持各种主流操作系统。对于Windows系统，我们可以直接使用预先编译好的可执行文件（<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>）。Windows下的可执行文件有两个版本，一个是常规版本，另一个是扩展版本（extended），这两个版本的区别在于后者支持Sass，而前者不支持，所以如果后面选择的模板主题中使用了Sass，就必须下载扩展版本。</p>
+<p>下载完成之后，我们可以把Hugo可执行文件添加到环境变量Path中，方便在命令行中调用。</p>
+<h2 id="网站构建">网站构建</h2>
+<p>首先在命令行中执行<code>hugo new site personal_blog</code>，这会在当前目录下新建一个名为<code>personal_blog</code>的目录，并在该目录下生成一些初始文件及目录：</p>
+<div id="id-1"><figure><a class="lightgallery" href="/images/Hugo-Blog/initialize.png" title="初始文件及目录" data-thumbnail="/images/Hugo-Blog/initialize.png" data-sub-html="<h2>初始文件及目录</h2><p>初始文件及目录</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-src="/images/Hugo-Blog/initialize.png"
+            data-srcset="/images/Hugo-Blog/initialize.png, /images/Hugo-Blog/initialize.png 1.5x, /images/Hugo-Blog/initialize.png 2x"
+            data-sizes="auto"
+            alt="初始文件及目录" />
+    </a><figcaption class="image-caption">初始文件及目录</figcaption>
+    </figure>
+</div>
+<p>其中一些文件及目录的作用如下：</p>
+<ul>
+<li><strong>config.toml</strong>: 网站的配置文件，可以用于设置网站的标题、语言、使用的模板主题、作者信息等等，具体选项可以参考各个模板主题的文档</li>
+<li><strong>themes</strong>: 用于存放模板主题相关的文件</li>
+<li><strong>static</strong>: 可用于存放网站用到的图像、视频、音乐等资源</li>
+<li><strong>content</strong>: 用于存放Markdown文件，如撰写的博客文档</li>
+</ul>
+<p>接下来我们可以前往<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>选择一个喜欢的模板主题。里面有非常非常多的主题可供选择：</p>
+<div id="id-2"><figure><a class="lightgallery" href="/images/Hugo-Blog/themes.png" title="主题" data-thumbnail="/images/Hugo-Blog/themes.png" data-sub-html="<h2>主题</h2><p>主题</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-src="/images/Hugo-Blog/themes.png"
+            data-srcset="/images/Hugo-Blog/themes.png, /images/Hugo-Blog/themes.png 1.5x, /images/Hugo-Blog/themes.png 2x"
+            data-sizes="auto"
+            alt="主题" />
+    </a><figcaption class="image-caption">主题</figcaption>
+    </figure>
+</div>
+<p>这里以主题<a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer">LoveIt</a>为例进行说明。首先我们进入<code>personal_blog</code>目录，然后在命令行中执行以下命令将该主题下载到<code>themes</code>目录中：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git init
+git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+</code></pre></td></tr></table>
+</div>
+</div><p>然后在配置文件中加入如下内容，指定使用的主题和版本（注意不要删去原有内容）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;LoveIt&#34;</span>
+
+<span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="nx">version</span> <span class="p">=</span> <span class="s2">&#34;0.2.X&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>这样基本的网站框架就搭建好了。我们可以在本地启动服务查看网站的效果，方法是在命令行中输入<code>hugo server</code>，然后访问网址<a href="localhost:1313/">localhost:1313/</a>。大致的效果如下：</p>
+<div id="id-3"><figure><a class="lightgallery" href="/images/Hugo-Blog/structure.png" title="网站框架" data-thumbnail="/images/Hugo-Blog/structure.png" data-sub-html="<h2>网站框架</h2><p>网站框架</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-src="/images/Hugo-Blog/structure.png"
+            data-srcset="/images/Hugo-Blog/structure.png, /images/Hugo-Blog/structure.png 1.5x, /images/Hugo-Blog/structure.png 2x"
+            data-sizes="auto"
+            alt="网站框架" />
+    </a><figcaption class="image-caption">网站框架</figcaption>
+    </figure>
+</div>
+<h2 id="网站配置">网站配置</h2>
+<p>刚才我们看到的网站非常简陋，因此接下来我们需要对网站进行配置以丰富网站的内容，方法是对配置文件<strong>config.toml</strong>进行修改。不同的模板主题支持的参数可能不太一样，我们选择的主题LoveIt所支持的各种参数和功能可以参考其<a href="https://hugoloveit.com/zh-cn/theme-documentation-basics/" target="_blank" rel="noopener noreffer">文档</a>。下面是一个比较简单的配置文件的例子，主要设置了语言、标题、主题、主题版本、搜索、菜单栏、作者等。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
+<span class="c"># [en, zh-cn, fr, ...] 设置默认的语言</span>
+<span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;zh-cn&#34;</span>
+<span class="c"># 网站语言, 仅在这里 CN 大写</span>
+<span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;zh-CN&#34;</span>
+<span class="c"># 是否包括中日韩文字</span>
+<span class="nx">hasCJKLanguage</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="c"># 网站标题</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;志洋的博客&#34;</span>
+
+<span class="c"># 更改使用 Hugo 构建网站时使用的默认主题</span>
+<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;LoveIt&#34;</span>
+
+<span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="c"># LoveIt 主题版本</span>
+  <span class="nx">version</span> <span class="p">=</span> <span class="s2">&#34;0.2.X&#34;</span>
+  <span class="nx">defaultTheme</span> <span class="p">=</span> <span class="s2">&#34;dark&#34;</span>
+  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">]</span>
+    <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+    <span class="c"># type of search engine (&#34;lunr&#34;, &#34;algolia&#34;)</span>
+    <span class="nx">type</span> <span class="p">=</span> <span class="s2">&#34;lunr&#34;</span>
+    <span class="c"># max index length of the chunked content</span>
+    <span class="nx">contentLength</span> <span class="p">=</span> <span class="mi">4000</span>
+    <span class="c"># placeholder of the search bar</span>
+    <span class="nx">placeholder</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="c"># LoveIt NEW | 0.2.1 max number of results length</span>
+    <span class="nx">maxResultLength</span> <span class="p">=</span> <span class="mi">10</span>
+    <span class="c"># LoveIt NEW | 0.2.3 snippet length of the result</span>
+    <span class="nx">snippetLength</span> <span class="p">=</span> <span class="mi">30</span>
+    <span class="c"># LoveIt NEW | 0.2.1 HTML tag name of the highlight part in results</span>
+    <span class="nx">highlightTag</span> <span class="p">=</span> <span class="s2">&#34;em&#34;</span>
+    <span class="c"># LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index</span>
+    <span class="nx">absoluteURL</span> <span class="p">=</span> <span class="kc">false</span>
+    <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">.</span><span class="nx">algolia</span><span class="p">]</span>
+      <span class="nx">index</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+      <span class="nx">appID</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+      <span class="nx">searchKey</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+
+<span class="p">[</span><span class="nx">menu</span><span class="p">]</span>
+  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;posts&#34;</span>
+    <span class="c"># 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="c"># 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标</span>
+    <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;文章&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/posts/&#34;</span>
+    <span class="c"># 当你将鼠标悬停在此菜单链接上时, 将显示的标题</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;标签&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/tags/&#34;</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;categories&#34;</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;分类&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/categories/&#34;</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
+  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;github&#34;</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&lt;i class=&#39;fab fa-github fa-fw&#39;&gt;&lt;/i&gt;&#34;</span>
+    <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/lzyang1995&#34;</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;GitHub&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">4</span>
+
+<span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
+  <span class="nx">home</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">,</span> <span class="s2">&#34;JSON&#34;</span><span class="p">]</span>
+
+<span class="p">[</span><span class="nx">author</span><span class="p">]</span>
+  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;李志洋&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>设置修改完成后，网站的大致效果如下：</p>
+<div id="id-4"><figure><a class="lightgallery" href="/images/Hugo-Blog/after_config.png" title="修改设置后的效果" data-thumbnail="/images/Hugo-Blog/after_config.png" data-sub-html="<h2>修改设置后的效果</h2><p>修改设置后的效果</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-src="/images/Hugo-Blog/after_config.png"
+            data-srcset="/images/Hugo-Blog/after_config.png, /images/Hugo-Blog/after_config.png 1.5x, /images/Hugo-Blog/after_config.png 2x"
+            data-sizes="auto"
+            alt="修改设置后的效果" />
+    </a><figcaption class="image-caption">修改设置后的效果</figcaption>
+    </figure>
+</div>
+<h2 id="撰写博客">撰写博客</h2>
+<p>我们可以通过<code>hugo new</code>命令来新建一篇博文，如<code>hugo new posts/my-first-post.md</code>，这样会在目录<code>content/posts</code>下新建一个Markdown文件<code>my-first-post.md</code>，其初始内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">---
+title: &#34;My First Post&#34;
+date: 2020-05-09T22:51:33+08:00
+draft: true
+---
+
+
+</code></pre></td></tr></table>
+</div>
+</div><p>可以看到其中初始化了几个前置参数（Front Matter）。我们在后面加入一些内容，如<code>This is my first post</code>，然后重新启动服务：<code>hugo server -D</code>。需要注意的是这里需要加上选项<code>-D</code>，表示将Draft博文也显示在网站中。否则，新建的博文将不会显示，因为新建的博文的前置参数中draft默认为true。或者我们也可以将该draft参数修改为false。此时访问<a href="localhost:1313/">localhost:1313/</a>，我们可以看到自己的博客已经显示出来：</p>
+<div id="id-5"><figure><a class="lightgallery" href="/images/Hugo-Blog/first_post.png" title="加入一篇博文" data-thumbnail="/images/Hugo-Blog/first_post.png" data-sub-html="<h2>加入一篇博文</h2><p>加入一篇博文</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-src="/images/Hugo-Blog/first_post.png"
+            data-srcset="/images/Hugo-Blog/first_post.png, /images/Hugo-Blog/first_post.png 1.5x, /images/Hugo-Blog/first_post.png 2x"
+            data-sizes="auto"
+            alt="加入一篇博文" />
+    </a><figcaption class="image-caption">加入一篇博文</figcaption>
+    </figure>
+</div>
+<h2 id="将网站部署到github-pages上">将网站部署到GitHub Pages上</h2>
+<p>首先，我们新建一个GitHub仓库<code>blog-repo</code>，用于存放前文所创建的所有网站文件。我们将其clone到本地，假设目录名也叫<code>blog-repo</code>，然后将前文中<code>personal_blog</code>目录下的所有文件和目录（.git除外）复制到<code>blog-repo</code>目录下。接下来，我们再新建一个GitHub仓库<code>&lt;username&gt;.github.io</code>，用于存放Hugo最终生成的网站。这里的<code>&lt;username&gt;</code>是你的GitHub用户名。然后，我们在<code>blog-repo</code>目录下执行以下命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git submodule add -b master https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git public
+</code></pre></td></tr></table>
+</div>
+</div><p>上述命令会将<code>&lt;username&gt;.github.io</code>仓库下载到<code>blog-repo/public</code>目录下。这个目录也是Hugo生成的网站默认所在的目录，所以后续生成网站之后，我们可以直接将<code>blog-repo/public</code>目录下的内容push到远端仓库中，这样就完成了网站在GitHub Pages上的部署。我们可以将部署过程写成一个shell script（参考自Hugo官方教程）:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+</span><span class="cp"></span>
+<span class="c1"># If a command fails then the deploy stops</span>
+<span class="nb">set</span> -e
+
+<span class="nb">printf</span> <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&#34;</span>
+
+<span class="c1"># Build the project.</span>
+hugo <span class="c1"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
+
+<span class="c1"># Go To Public folder</span>
+<span class="nb">cd</span> public
+
+<span class="c1"># Add changes to git.</span>
+git add .
+
+<span class="c1"># Commit changes.</span>
+<span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&#34;</span>
+<span class="k">if</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$*</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+	<span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$*</span><span class="s2">&#34;</span>
+<span class="k">fi</span>
+git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
+
+<span class="c1"># Push source and build repos.</span>
+git push origin master
+</code></pre></td></tr></table>
+</div>
+</div><p>这样每当我们撰写了新的博文，或者修改了网站设置，就可以执行上面的脚本将网站重新部署到GitHub Pages上。在Windows环境下，我们可以通过Git Bash或者Windows Subsystem for Linux来执行shell script。</p>
+<h2 id="参考资料">参考资料</h2>
+<ol>
+<li><a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></li>
+<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-basics/">https://hugoloveit.com/zh-cn/theme-documentation-basics/</a></li>
+<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-content/">https://hugoloveit.com/zh-cn/theme-documentation-content/</a></li>
+<li><a href="https://mjsmithdev.com/setting-up-hugo-on-windows/">https://mjsmithdev.com/setting-up-hugo-on-windows/</a></li>
+</ol></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-05-09 更新</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/posts/%E4%BD%BF%E7%94%A8hugo&#43;github-pages%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" data-title="使用Hugo&#43;GitHub Pages构建博客网站" data-image="/images/Hugo-Blog/hugo-logo-wide.png"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/hugo/">Hugo</a>,&nbsp;<a href="/tags/github-pages/">Github Pages</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.6"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">李志洋</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><style>#id-1 {
+  text-align: center; }
+#id-2 {
+  text-align: center; }
+#id-3 {
+  text-align: center; }
+#id-4 {
+  text-align: center; }
+#id-5 {
+  text-align: center; }
+.lg-toolbar .lg-icon::after { color: #999; }</style><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"data":{"id-1":"\u003cfigure\u003e\u003ca class=\"lightgallery\" href=\"/images/Hugo-Blog/initialize.png\" title=\"初始文件及目录\" data-thumbnail=\"/images/Hugo-Blog/initialize.png\" data-sub-html=\"\u003ch2\u003e初始文件及目录\u003c/h2\u003e\u003cp\u003e初始文件及目录\u003c/p\u003e\"\u003e\r\n        \u003cimg\r\n            class=\"lazyload\"\r\n            src=\"/svg/loading/normal.min.svg\"\r\n            data-src=\"/images/Hugo-Blog/initialize.png\"\r\n            data-srcset=\"/images/Hugo-Blog/initialize.png, /images/Hugo-Blog/initialize.png 1.5x, /images/Hugo-Blog/initialize.png 2x\"\r\n            data-sizes=\"auto\"\r\n            alt=\"初始文件及目录\" /\u003e\r\n    \u003c/a\u003e\u003cfigcaption class=\"image-caption\"\u003e初始文件及目录\u003c/figcaption\u003e\r\n    \u003c/figure\u003e\n","id-2":"\u003cfigure\u003e\u003ca class=\"lightgallery\" href=\"/images/Hugo-Blog/themes.png\" title=\"主题\" data-thumbnail=\"/images/Hugo-Blog/themes.png\" data-sub-html=\"\u003ch2\u003e主题\u003c/h2\u003e\u003cp\u003e主题\u003c/p\u003e\"\u003e\r\n        \u003cimg\r\n            class=\"lazyload\"\r\n            src=\"/svg/loading/normal.min.svg\"\r\n            data-src=\"/images/Hugo-Blog/themes.png\"\r\n            data-srcset=\"/images/Hugo-Blog/themes.png, /images/Hugo-Blog/themes.png 1.5x, /images/Hugo-Blog/themes.png 2x\"\r\n            data-sizes=\"auto\"\r\n            alt=\"主题\" /\u003e\r\n    \u003c/a\u003e\u003cfigcaption class=\"image-caption\"\u003e主题\u003c/figcaption\u003e\r\n    \u003c/figure\u003e\n","id-3":"\u003cfigure\u003e\u003ca class=\"lightgallery\" href=\"/images/Hugo-Blog/structure.png\" title=\"网站框架\" data-thumbnail=\"/images/Hugo-Blog/structure.png\" data-sub-html=\"\u003ch2\u003e网站框架\u003c/h2\u003e\u003cp\u003e网站框架\u003c/p\u003e\"\u003e\r\n        \u003cimg\r\n            class=\"lazyload\"\r\n            src=\"/svg/loading/normal.min.svg\"\r\n            data-src=\"/images/Hugo-Blog/structure.png\"\r\n            data-srcset=\"/images/Hugo-Blog/structure.png, /images/Hugo-Blog/structure.png 1.5x, /images/Hugo-Blog/structure.png 2x\"\r\n            data-sizes=\"auto\"\r\n            alt=\"网站框架\" /\u003e\r\n    \u003c/a\u003e\u003cfigcaption class=\"image-caption\"\u003e网站框架\u003c/figcaption\u003e\r\n    \u003c/figure\u003e\n","id-4":"\u003cfigure\u003e\u003ca class=\"lightgallery\" href=\"/images/Hugo-Blog/after_config.png\" title=\"修改设置后的效果\" data-thumbnail=\"/images/Hugo-Blog/after_config.png\" data-sub-html=\"\u003ch2\u003e修改设置后的效果\u003c/h2\u003e\u003cp\u003e修改设置后的效果\u003c/p\u003e\"\u003e\r\n        \u003cimg\r\n            class=\"lazyload\"\r\n            src=\"/svg/loading/normal.min.svg\"\r\n            data-src=\"/images/Hugo-Blog/after_config.png\"\r\n            data-srcset=\"/images/Hugo-Blog/after_config.png, /images/Hugo-Blog/after_config.png 1.5x, /images/Hugo-Blog/after_config.png 2x\"\r\n            data-sizes=\"auto\"\r\n            alt=\"修改设置后的效果\" /\u003e\r\n    \u003c/a\u003e\u003cfigcaption class=\"image-caption\"\u003e修改设置后的效果\u003c/figcaption\u003e\r\n    \u003c/figure\u003e\n","id-5":"\u003cfigure\u003e\u003ca class=\"lightgallery\" href=\"/images/Hugo-Blog/first_post.png\" title=\"加入一篇博文\" data-thumbnail=\"/images/Hugo-Blog/first_post.png\" data-sub-html=\"\u003ch2\u003e加入一篇博文\u003c/h2\u003e\u003cp\u003e加入一篇博文\u003c/p\u003e\"\u003e\r\n        \u003cimg\r\n            class=\"lazyload\"\r\n            src=\"/svg/loading/normal.min.svg\"\r\n            data-src=\"/images/Hugo-Blog/first_post.png\"\r\n            data-srcset=\"/images/Hugo-Blog/first_post.png, /images/Hugo-Blog/first_post.png 1.5x, /images/Hugo-Blog/first_post.png 2x\"\r\n            data-sizes=\"auto\"\r\n            alt=\"加入一篇博文\" /\u003e\r\n    \u003c/a\u003e\u003cfigcaption class=\"image-caption\"\u003e加入一篇博文\u003c/figcaption\u003e\r\n    \u003c/figure\u003e\n"},"headerMode":{"desktop":null,"mobile":null},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":30,"type":"lunr"}};
+</script><script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=html5shiv%2CElement.prototype.closest%2CrequestAnimationFrame%2CCustomEvent%2CPromise%2CObject.entries%2CObject.assign%2CObject.values%2Cfetch%2CElement.prototype.after%2CArray.prototype.fill%2CIntersectionObserver%2CArray.from%2CArray.prototype.find%2CMath.sign"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/object-fit-images/ofi.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
