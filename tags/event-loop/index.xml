@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Event Loop - 标签 - 志洋的博客</title>
+        <link>http://example.org/tags/event-loop/</link>
+        <description>Event Loop - 标签 - 志洋的博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 14 May 2020 11:33:21 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/event-loop/" rel="self" type="application/rss+xml" /><item>
+    <title>浅析Promise、async/await与Event Loop</title>
+    <link>http://example.org/posts/%E6%B5%85%E6%9E%90promiseasync&#43;await%E4%B8%8Eevent-loop/</link>
+    <pubDate>Thu, 14 May 2020 11:33:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/%E6%B5%85%E6%9E%90promiseasync&#43;await%E4%B8%8Eevent-loop/</guid>
+    <description><![CDATA[<p>JavaScript引擎是基于Event Loop来运行的，不断处理队列中的各项任务。Event Loop包含一个调用栈（Stack），若干个任务队列（Queue）和一个堆（Heap）。它的工作模式就是不断从任务队列中取出任务放入栈中执行，一次只执行一个任务，当前任务执行完之后再从任务队列中取出下一个任务开始执行。当我们把Promise以及async/await也考虑进Event Loop时，各项任务的执行顺序就变得稍显复杂。</p>]]></description>
+</item></channel>
+</rss>
