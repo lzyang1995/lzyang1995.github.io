@@ -3,7 +3,14 @@
         <title>志洋的博客</title>
         <link>http://example.org/</link>
         <description>志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 26 May 2020 20:33:56 &#43;0800</lastBuildDate><atom:link href="http://example.org/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 12 Jun 2020 21:31:08 &#43;0800</lastBuildDate><atom:link href="http://example.org/" rel="self" type="application/rss+xml" /><item>
+    <title>使用Git将本地项目上传到远程仓库</title>
+    <link>http://example.org/posts/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
+    <pubDate>Fri, 12 Jun 2020 21:31:08 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
+    <description><![CDATA[<p>最近自学了一下React，Redux以及React Router的相关内容，想找个项目练练手，于是找到了B站上的一个教程（<a href="https://www.bilibili.com/video/BV1T7411W72T">https://www.bilibili.com/video/BV1T7411W72T</a>），这个教程最后有一个仿百万英雄的答题App的小项目，然后就按照它的功能自己实现了一遍。今天想着把这个项目上传到GitHub上，顺便学习一下自己还不太熟悉的Git。这里记录一下自己的上传过程。</p>]]></description>
+</item><item>
     <title>LeetCode 128: Longest Consecutive Sequence</title>
     <link>http://example.org/posts/leetcode128/</link>
     <pubDate>Tue, 26 May 2020 20:33:56 &#43;0800</pubDate>
