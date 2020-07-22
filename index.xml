@@ -3,7 +3,14 @@
         <title>志洋的博客</title>
         <link>http://example.org/</link>
         <description>志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 20 Jul 2020 23:16:27 &#43;0800</lastBuildDate><atom:link href="http://example.org/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</lastBuildDate><atom:link href="http://example.org/" rel="self" type="application/rss+xml" /><item>
+    <title>从源码构建和运行VS Code</title>
+    <link>http://example.org/posts/build-vscode/</link>
+    <pubDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/build-vscode/</guid>
+    <description><![CDATA[<p>VS Code是一个基于Electron的开源的代码编辑器。最近由于项目需要，要分析一下VS Code，因此打算先clone它的源码，然后构建运行起来。可能是因为我的网不好，再加上GFW的原因，这个过程异常艰难。因此在这里记录一下整个的构建过程。</p>]]></description>
+</item><item>
     <title>Leetcode 138: Copy List with Random Pointer</title>
     <link>http://example.org/posts/leetcode138/</link>
     <pubDate>Mon, 20 Jul 2020 23:16:27 &#43;0800</pubDate>

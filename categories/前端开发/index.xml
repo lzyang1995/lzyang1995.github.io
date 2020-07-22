@@ -3,7 +3,14 @@
         <title>前端开发 - 分类 - 志洋的博客</title>
         <link>http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
         <description>前端开发 - 分类 - 志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 15 Jun 2020 22:54:07 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+    <title>从源码构建和运行VS Code</title>
+    <link>http://example.org/posts/build-vscode/</link>
+    <pubDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/build-vscode/</guid>
+    <description><![CDATA[<p>VS Code是一个基于Electron的开源的代码编辑器。最近由于项目需要，要分析一下VS Code，因此打算先clone它的源码，然后构建运行起来。可能是因为我的网不好，再加上GFW的原因，这个过程异常艰难。因此在这里记录一下整个的构建过程。</p>]]></description>
+</item><item>
     <title>React与Java Spring后台联合开发</title>
     <link>http://example.org/posts/react%E4%B8%8Ejava-spring%E5%90%8E%E5%8F%B0%E8%81%94%E5%90%88%E5%BC%80%E5%8F%91/</link>
     <pubDate>Mon, 15 Jun 2020 22:54:07 &#43;0800</pubDate>

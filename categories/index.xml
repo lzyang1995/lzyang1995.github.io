@@ -3,19 +3,19 @@
         <title>Categories - 分类 - 志洋的博客</title>
         <link>http://example.org/categories/</link>
         <description>Categories - 分类 - 志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 20 Jul 2020 23:16:27 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>前端开发</title>
+    <link>http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
+    <pubDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>算法</title>
     <link>http://example.org/categories/%E7%AE%97%E6%B3%95/</link>
     <pubDate>Mon, 20 Jul 2020 23:16:27 &#43;0800</pubDate>
     <author>作者</author>
     <guid>http://example.org/categories/%E7%AE%97%E6%B3%95/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>前端开发</title>
-    <link>http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
-    <pubDate>Mon, 15 Jun 2020 22:54:07 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>GitHub</title>
