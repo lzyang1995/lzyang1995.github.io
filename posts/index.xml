@@ -3,7 +3,14 @@
         <title>所有文章 - 志洋的博客</title>
         <link>http://example.org/posts/</link>
         <description>所有文章 | 志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>搭建基于Webpack, TypeScript和React的Electron开发框架</title>
+    <link>http://example.org/posts/electron-forge-with-react/</link>
+    <pubDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/electron-forge-with-react/</guid>
+    <description><![CDATA[<p>最近的实习项目需要基于Electron来做，如果能把Webpack, TypeScript和React也融入到开发过程中就再好不过了。这里记录一下搭建这样一个开发框架的过程。</p>]]></description>
+</item><item>
     <title>从源码构建和运行VS Code</title>
     <link>http://example.org/posts/build-vscode/</link>
     <pubDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</pubDate>
@@ -66,14 +73,5 @@
     <author>作者</author>
     <guid>http://example.org/posts/%E6%B5%85%E6%9E%90promiseasync&#43;await%E4%B8%8Eevent-loop/</guid>
     <description><![CDATA[<p>JavaScript引擎是基于Event Loop来运行的，不断处理队列中的各项任务。Event Loop包含一个调用栈（Stack），若干个任务队列（Queue）和一个堆（Heap）。它的工作模式就是不断从任务队列中取出任务放入栈中执行，一次只执行一个任务，当前任务执行完之后再从任务队列中取出下一个任务开始执行。当我们把Promise以及async/await也考虑进Event Loop时，各项任务的执行顺序就变得稍显复杂。</p>]]></description>
-</item><item>
-    <title>使用Hugo&#43;GitHub Pages构建博客网站</title>
-    <link>http://example.org/posts/%E4%BD%BF%E7%94%A8hugo&#43;github-pages%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
-    <pubDate>Sat, 09 May 2020 20:22:16 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/posts/%E4%BD%BF%E7%94%A8hugo&#43;github-pages%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/Hugo-Blog/hugo-logo-wide.png" referrerpolicy="no-referrer">
-            </div><p><a href="https://gohugo.io/" target="_blank" rel="noopener noreffer">Hugo</a>是一个基于Go语言的静态网站构建工具，它提供了大量可供选择的模板主题（Theme），帮助我们更加快捷地搭建自己的网站，并且可以非常方便地部署在GitHub Pages上。</p>]]></description>
 </item></channel>
 </rss>

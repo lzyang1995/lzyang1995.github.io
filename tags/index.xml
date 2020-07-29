@@ -3,12 +3,19 @@
         <title>Tags - 标签 - 志洋的博客</title>
         <link>http://example.org/tags/</link>
         <description>Tags - 标签 - 志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Electron</title>
     <link>http://example.org/tags/electron/</link>
-    <pubDate>Wed, 22 Jul 2020 13:52:49 &#43;0800</pubDate>
+    <pubDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</pubDate>
     <author>作者</author>
     <guid>http://example.org/tags/electron/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>React</title>
+    <link>http://example.org/tags/react/</link>
+    <pubDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/react/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>VSCode</title>
@@ -30,13 +37,6 @@
     <pubDate>Mon, 20 Jul 2020 23:16:27 &#43;0800</pubDate>
     <author>作者</author>
     <guid>http://example.org/tags/leetcode/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>React</title>
-    <link>http://example.org/tags/react/</link>
-    <pubDate>Mon, 15 Jun 2020 22:54:07 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/tags/react/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Spring</title>
