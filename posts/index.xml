@@ -3,7 +3,14 @@
         <title>所有文章 - 志洋的博客</title>
         <link>http://example.org/posts/</link>
         <description>所有文章 | 志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 18 Aug 2020 20:23:36 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>关于ESM的default import以及TypeScript的坑</title>
+    <link>http://example.org/posts/about-default-import-and-ts-config/</link>
+    <pubDate>Tue, 18 Aug 2020 20:23:36 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/about-default-import-and-ts-config/</guid>
+    <description><![CDATA[<p>最近实习期间在做一个基于Electron的开发调试工具，然后想利用<a href="https://github.com/microsoft/node-pty" target="_blank" rel="noopener noreffer">node-pty</a>以及<a href="https://github.com/xtermjs/xterm.js/" target="_blank" rel="noopener noreffer">xterm</a>把terminal集成进来，就像VSCode里面的terminal一样，然后遇到了大坑。研究了很久才发现原来是使用默认导入（default import）的问题……</p>]]></description>
+</item><item>
     <title>搭建基于Webpack, TypeScript和React的Electron开发框架</title>
     <link>http://example.org/posts/electron-forge-with-react/</link>
     <pubDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>作者</author>
     <guid>http://example.org/posts/leetcode105/</guid>
     <description><![CDATA[原题链接：https://leetcode.com/problems/construct-binary-tree-from-preorder]]></description>
-</item><item>
-    <title>浅析Promise、async/await与Event Loop</title>
-    <link>http://example.org/posts/%E6%B5%85%E6%9E%90promiseasync&#43;await%E4%B8%8Eevent-loop/</link>
-    <pubDate>Thu, 14 May 2020 11:33:21 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/posts/%E6%B5%85%E6%9E%90promiseasync&#43;await%E4%B8%8Eevent-loop/</guid>
-    <description><![CDATA[<p>JavaScript引擎是基于Event Loop来运行的，不断处理队列中的各项任务。Event Loop包含一个调用栈（Stack），若干个任务队列（Queue）和一个堆（Heap）。它的工作模式就是不断从任务队列中取出任务放入栈中执行，一次只执行一个任务，当前任务执行完之后再从任务队列中取出下一个任务开始执行。当我们把Promise以及async/await也考虑进Event Loop时，各项任务的执行顺序就变得稍显复杂。</p>]]></description>
 </item></channel>
 </rss>

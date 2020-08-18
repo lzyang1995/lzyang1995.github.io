@@ -3,7 +3,14 @@
         <title>前端开发 - 分类 - 志洋的博客</title>
         <link>http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
         <description>前端开发 - 分类 - 志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 18 Aug 2020 20:23:36 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+    <title>关于ESM的default import以及TypeScript的坑</title>
+    <link>http://example.org/posts/about-default-import-and-ts-config/</link>
+    <pubDate>Tue, 18 Aug 2020 20:23:36 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/about-default-import-and-ts-config/</guid>
+    <description><![CDATA[<p>最近实习期间在做一个基于Electron的开发调试工具，然后想利用<a href="https://github.com/microsoft/node-pty" target="_blank" rel="noopener noreffer">node-pty</a>以及<a href="https://github.com/xtermjs/xterm.js/" target="_blank" rel="noopener noreffer">xterm</a>把terminal集成进来，就像VSCode里面的terminal一样，然后遇到了大坑。研究了很久才发现原来是使用默认导入（default import）的问题……</p>]]></description>
+</item><item>
     <title>搭建基于Webpack, TypeScript和React的Electron开发框架</title>
     <link>http://example.org/posts/electron-forge-with-react/</link>
     <pubDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</pubDate>
