@@ -3,7 +3,14 @@
         <title>志洋的博客</title>
         <link>http://example.org/</link>
         <description>志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 18 Aug 2020 20:23:36 &#43;0800</lastBuildDate><atom:link href="http://example.org/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 22 Sep 2020 17:05:53 &#43;0800</lastBuildDate><atom:link href="http://example.org/" rel="self" type="application/rss+xml" /><item>
+    <title>React中的懒加载</title>
+    <link>http://example.org/posts/react-lazy-load/</link>
+    <pubDate>Tue, 22 Sep 2020 17:05:53 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/react-lazy-load/</guid>
+    <description><![CDATA[React中的懒加载（Lazy Load）有两种实现方式，一个是通过React.lazy，另一个是通过叫做loadable components]]></description>
+</item><item>
     <title>关于ESM的default import以及TypeScript的坑</title>
     <link>http://example.org/posts/about-default-import-and-ts-config/</link>
     <pubDate>Tue, 18 Aug 2020 20:23:36 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>作者</author>
     <guid>http://example.org/posts/leetcode114/</guid>
     <description><![CDATA[原题链接：https://leetcode.com/problems/flatten-binary-tree-to-linked-list/]]></description>
-</item><item>
-    <title>LeetCode 105: Construct Binary Tree from Preorder and Inorder Traversal</title>
-    <link>http://example.org/posts/leetcode105/</link>
-    <pubDate>Mon, 18 May 2020 21:21:18 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/posts/leetcode105/</guid>
-    <description><![CDATA[原题链接：https://leetcode.com/problems/construct-binary-tree-from-preorder]]></description>
 </item></channel>
 </rss>

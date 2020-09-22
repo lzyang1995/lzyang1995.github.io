@@ -3,7 +3,21 @@
         <title>Tags - 标签 - 志洋的博客</title>
         <link>http://example.org/tags/</link>
         <description>Tags - 标签 - 志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 18 Aug 2020 20:23:36 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 22 Sep 2020 17:05:53 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Lazy Load</title>
+    <link>http://example.org/tags/lazy-load/</link>
+    <pubDate>Tue, 22 Sep 2020 17:05:53 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/lazy-load/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>React</title>
+    <link>http://example.org/tags/react/</link>
+    <pubDate>Tue, 22 Sep 2020 17:05:53 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/react/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>ESM</title>
     <link>http://example.org/tags/esm/</link>
     <pubDate>Tue, 18 Aug 2020 20:23:36 &#43;0800</pubDate>
@@ -23,13 +37,6 @@
     <pubDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</pubDate>
     <author>作者</author>
     <guid>http://example.org/tags/electron/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>React</title>
-    <link>http://example.org/tags/react/</link>
-    <pubDate>Wed, 29 Jul 2020 10:33:33 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/tags/react/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>VSCode</title>
@@ -65,13 +72,6 @@
     <pubDate>Fri, 12 Jun 2020 21:31:08 &#43;0800</pubDate>
     <author>作者</author>
     <guid>http://example.org/tags/git/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Event Loop</title>
-    <link>http://example.org/tags/event-loop/</link>
-    <pubDate>Thu, 14 May 2020 11:33:21 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/tags/event-loop/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
