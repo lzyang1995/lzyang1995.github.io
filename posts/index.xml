@@ -3,7 +3,14 @@
         <title>所有文章 - 志洋的博客</title>
         <link>http://example.org/posts/</link>
         <description>所有文章 | 志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 22 Sep 2020 17:05:53 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Sep 2020 21:52:21 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Webpack中的publicPath选项</title>
+    <link>http://example.org/posts/webpack-public-path/</link>
+    <pubDate>Wed, 23 Sep 2020 21:52:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/webpack-public-path/</guid>
+    <description><![CDATA[在Webpack配置中有一个output.publicPath选项，可以用来给资源的URL加上前缀。除了这个设置以外，很多loader以及p]]></description>
+</item><item>
     <title>React中的懒加载</title>
     <link>http://example.org/posts/react-lazy-load/</link>
     <pubDate>Tue, 22 Sep 2020 17:05:53 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>作者</author>
     <guid>http://example.org/posts/leetcode124/</guid>
     <description><![CDATA[原题链接：https://leetcode.com/problems/binary-tree-maximum-path-sum/ 这道题是要在]]></description>
-</item><item>
-    <title>LeetCode 114: Flatten Binary Tree to Linked List</title>
-    <link>http://example.org/posts/leetcode114/</link>
-    <pubDate>Tue, 19 May 2020 21:43:40 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/posts/leetcode114/</guid>
-    <description><![CDATA[原题链接：https://leetcode.com/problems/flatten-binary-tree-to-linked-list/]]></description>
 </item></channel>
 </rss>

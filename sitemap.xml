@@ -2,14 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://example.org/categories/</loc><lastmod>2020-09-22T17:05:53&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/categories/</loc><lastmod>2020-09-23T21:52:21&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/posts/</loc><lastmod>2020-09-23T21:52:21&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/</loc><lastmod>2020-09-23T21:52:21&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/webpack/</loc><lastmod>2020-09-23T21:52:21&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/posts/webpack-public-path/</loc><lastmod>2020-09-23T21:52:21&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc><lastmod>2020-09-23T21:52:21&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/</loc><lastmod>2020-09-23T21:52:21&#43;08:00</lastmod></url><url>
             <loc>http://example.org/tags/lazy-load/</loc><lastmod>2020-09-22T17:05:53&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/posts/</loc><lastmod>2020-09-22T17:05:53&#43;08:00</lastmod></url><url>
             <loc>http://example.org/tags/react/</loc><lastmod>2020-09-22T17:05:53&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/react-lazy-load/</loc><lastmod>2020-09-22T17:05:53&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/tags/</loc><lastmod>2020-09-22T17:05:53&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc><lastmod>2020-09-22T17:05:53&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/</loc><lastmod>2020-09-22T17:05:53&#43;08:00</lastmod></url><url>
             <loc>http://example.org/tags/esm/</loc><lastmod>2020-08-18T20:23:36&#43;08:00</lastmod></url><url>
             <loc>http://example.org/tags/typescript/</loc><lastmod>2020-08-18T20:23:36&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/about-default-import-and-ts-config/</loc><lastmod>2020-08-18T20:23:36&#43;08:00</lastmod></url><url>

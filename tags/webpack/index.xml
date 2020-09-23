@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Webpack - 标签 - 志洋的博客</title>
+        <link>http://example.org/tags/webpack/</link>
+        <description>Webpack - 标签 - 志洋的博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Sep 2020 21:52:21 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/webpack/" rel="self" type="application/rss+xml" /><item>
+    <title>Webpack中的publicPath选项</title>
+    <link>http://example.org/posts/webpack-public-path/</link>
+    <pubDate>Wed, 23 Sep 2020 21:52:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/posts/webpack-public-path/</guid>
+    <description><![CDATA[在Webpack配置中有一个output.publicPath选项，可以用来给资源的URL加上前缀。除了这个设置以外，很多loader以及p]]></description>
+</item></channel>
+</rss>

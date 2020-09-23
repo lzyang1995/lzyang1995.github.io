@@ -3,7 +3,14 @@
         <title>Tags - 标签 - 志洋的博客</title>
         <link>http://example.org/tags/</link>
         <description>Tags - 标签 - 志洋的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 22 Sep 2020 17:05:53 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Sep 2020 21:52:21 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Webpack</title>
+    <link>http://example.org/tags/webpack/</link>
+    <pubDate>Wed, 23 Sep 2020 21:52:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/webpack/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Lazy Load</title>
     <link>http://example.org/tags/lazy-load/</link>
     <pubDate>Tue, 22 Sep 2020 17:05:53 &#43;0800</pubDate>
@@ -65,13 +72,6 @@
     <pubDate>Mon, 15 Jun 2020 22:54:07 &#43;0800</pubDate>
     <author>作者</author>
     <guid>http://example.org/tags/spring/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Git</title>
-    <link>http://example.org/tags/git/</link>
-    <pubDate>Fri, 12 Jun 2020 21:31:08 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/tags/git/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
