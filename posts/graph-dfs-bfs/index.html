@@ -178,7 +178,7 @@
         const current = queue.shift();
         print(current);
 
-        for each vertex w in v&#39;s adjacency list {
+        for each vertex w in current&#39;s adjacency list {
             if (!w.visited) {
                 w.visited = true;
                 queue.push(w);
